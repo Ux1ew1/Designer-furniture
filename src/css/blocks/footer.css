@@ -1,0 +1,130 @@
+.footer {
+  padding-top: 100px;
+  margin-top: 100px;
+  background-color: #fff;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-link {
+  font-family: 'Avenir next', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0;
+  color: #303032;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
+}
+
+.footer-contact {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 30px;
+}
+
+.footer-contact-link {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #303032;
+}
+
+.tel,
+.mail {
+  position: relative;
+  padding-left: 22px;
+}
+
+.tel::before {
+  position: absolute;
+  content: url(./../../img/icon-phone.svg);
+  display: block;
+  left: 0;
+}
+
+.mail::before {
+  position: absolute;
+  content: url(../../img/icon-mail.svg);
+  display: block;
+  left: 0;
+}
+
+.footer-copyright {
+  text-align: end;
+}
+
+.copyright {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 0;
+  padding: 10px 0;
+  opacity: 0.2;
+  color: #000;
+}
+
+.footer-nav__left,
+.footer-nav__right {
+  display: flex;
+  gap: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .footer-nav__left,
+  .footer-nav__right {
+    gap: 20px;
+  }
+
+  .footer-nav {
+    gap: 20px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 39px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    margin-top: 96px;
+    padding-top: 30px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-nav__left,
+  .footer-nav__right {
+    gap: 60px;
+  }
+}
